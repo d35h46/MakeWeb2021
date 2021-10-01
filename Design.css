@@ -1,15 +1,19 @@
-h2{
-    animation-name: slidein;
-    animation-duration: 3s
+#LOGO{
+    width: 10px;
+    height: 10px;
 }
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%
-  }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+ul{
+    text-align: center;
+}
+
+.NavItem{
+    display: inline-block;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.NavItem:hover{
+    color: blue;
 }
