@@ -1,19 +1,36 @@
+body{
+    background-color: #000000;
+}
+
 #LOGO{
-    width: 10px;
-    height: 10px;
+    float: left;
+}
+
+header{
+    background-color: #696969;
 }
 
 ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    list-style-type: none;
     text-align: center;
+}
+
+li{
+    display: relative;
+    float: right;
 }
 
 .NavItem{
-    display: inline-block;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    color: white;
+    margin-left: 10% auto;
+    margin-right: 5% auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .NavItem:hover{
-    color: blue;
+    color: red;
 }
