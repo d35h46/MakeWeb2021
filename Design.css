@@ -26,12 +26,11 @@ body{
     color: white;
     text-align: center;
     font-family: HangeulNuri-Bold;
-    padding-top: 200px;
+    z-index: -5;
 }
 
 main{
     padding: 5%;
-    display: block;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -40,9 +39,18 @@ main #Contents{
     text-align: center;
     border: double 10px;
 }
+
 #Contents img{
     width: 100px; height: 100px;
     filter: invert();
+}
+
+#popup {
+    display: inline-block;
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    margin: 50%;
 }
 
 footer{
@@ -81,6 +89,11 @@ nav ul li{
     background: #F5F5F5;
     width: 70px;
     border-radius: 5px;
+}
+
+nav ul :nth-child(4){
+    float: right;
+    text-align: center;
 }
 
 .NavItem:hover{
