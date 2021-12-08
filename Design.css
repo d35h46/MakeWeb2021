@@ -5,8 +5,12 @@
     font-style: normal;
 }
 
+*{
+    margin:0; padding:0;
+}
+
 h1{
-    font-size: 120px;
+    font-size: 150px;
 }
 h2{
     font-size: 45px;
@@ -17,9 +21,15 @@ h3{
 h4{
     font-size: 25px;
 }
+h5{
+    font-size: 100px;
+}
+
+p, br{
+    margin-top: 50px; margin-bottom: 50px;
+}
 
 body{
-    margin:0 ; padding: 0;
     background-image: url("Image/BG.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +45,6 @@ main{
 }
 
 main #Contents{
-    margin: 0; padding: 0;
     text-align: center;
     border: double 10px;
 }
@@ -43,14 +52,6 @@ main #Contents{
 #Contents img{
     width: 100px; height: 100px;
     filter: invert();
-}
-
-#popup {
-    display: inline-block;
-    position: fixed;
-    z-index: 10;
-    background-color: black;
-    margin: 50%;
 }
 
 footer{
@@ -68,13 +69,8 @@ footer img{
 
 
 nav ul{
-    animation-name: NavAnimation;
-    animation-duration: 0.8s;
-    animation-direction: ease-in;
-
     list-style-type: none;
     background-color: #F5F5F5;
-    margin: 0; padding: 0;
     width: 100%;
     box-sizing: border-box;
     top: 0; left: 0; position: fixed;
@@ -91,36 +87,48 @@ nav ul li{
     border-radius: 5px;
 }
 
-nav ul :nth-child(4){
-    float: right;
-    text-align: center;
-}
-
-.NavItem:hover{
-    background: #E3D587;
-    border-radius: 5px;
-    filter: invert();
-}
-
 nav ul li img{
     width: 40px; height: 40px;
 }
 
-@keyframes NavAnimation{
-    from{
-        top: -50;
-    }
-    to{
-        top: 0;
-    }
+#LoginContain{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    width: 600px; height: 750px;
+    border-radius: 30px;
 }
 
-@keyframes TextOpacity{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+#LoginBtn{
+    box-sizing: border-box;
+    width: 30%; height: 70px;
+    margin: auto;
+    background-color: white;
+    border: solid 5px;
+    border-radius: 10px;
 }
+
+#LoginBtn:hover{
+    background-color: yellow;
+}
+
+#InputID, #InputPw{
+    position: relative;
+    width: 75%;
+    margin: auto; margin-bottom: 70px;
+}
+
+#InputID input:focus{
+    //몰루
+}
+
+#LoginContain label{
+    position: absolute;
+    top: 10px; left: 10px;
+}
+
+#LoginContain input{
+    width: 100%; height: 50px;
+}
+
 
