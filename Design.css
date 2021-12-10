@@ -10,125 +10,69 @@
 }
 
 h1{
-    font-size: 150px;
-}
-h2{
-    font-size: 45px;
-}
-h3{
-    font-size: 30px;
-}
-h4{
-    font-size: 25px;
-}
-h5{
     font-size: 100px;
 }
-
-p, br{
-    margin-top: 50px; margin-bottom: 50px;
+h2{
+    font-size: 30px;
 }
-
+img{
+    width: 45px; height: 45px;
+}
 body{
-    background-image: url("Image/BG.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    font-family: HangeulNuri-Bold;
-    z-index: -5;
+    position: relative;
 }
-
+header{
+    position: relative;
+    animation-name: NavAnimation;
+    animation-duration: 0.5s;
+    animation-direction: ease-in;
+}
+nav{
+    width: 100%;
+    padding-top: 20px; padding-bottom: 20px;
+    text-align: center;
+    background-color: lightyellow;
+}
+nav ul{
+}
+nav li{
+    display: inline-block;
+    padding-left: 5%; padding-right: 5%;
+}
 main{
-    padding: 5%;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-main #Contents{
+    display: inline-block;
+    width: 100%;
+    padding-top: 50px;
     text-align: center;
-    border: double 10px;
 }
-
-#Contents img{
-    width: 100px; height: 100px;
-    filter: invert();
-}
-
 footer{
     position: fixed;
-    bottom: 0;
-    height: 80px; width: 100%;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
     background-color: black;
 }
-
 footer img{
-    padding: 20px; padding-left: 100px; padding-right: 100px;
-    height: 50px; width: 50px;
+    padding: 20px;
     filter: invert();
-}
-
-
-nav ul{
-    list-style-type: none;
-    background-color: #F5F5F5;
-    width: 100%;
-    box-sizing: border-box;
-    top: 0; left: 0; position: fixed;
-    text-align: center;
-    z-index: 2;
-}
-
-nav ul li{
-    display: inline-block;
-    margin-left: 3%; margin-right: 3%; margin-top: 0.5%; margin-bottom: 0.5%; padding-left: 0.5%; padding-right: 0.5%;
-    color: white;
-    background: #F5F5F5;
-    width: 70px;
-    border-radius: 5px;
-}
-
-nav ul li img{
-    width: 40px; height: 40px;
 }
 
 #LoginContain{
-    display: inline-block;
-    background-color: white;
-    color: black;
-    width: 600px; height: 750px;
-    border-radius: 30px;
-}
-
-#LoginBtn{
-    box-sizing: border-box;
-    width: 30%; height: 70px;
     margin: auto;
-    background-color: white;
-    border: solid 5px;
-    border-radius: 10px;
+    width: 35%; height: 45%;
+    background-color: cyan;
+    border-radius: 20px;
 }
 
-#LoginBtn:hover{
-    background-color: yellow;
+#InputID label{
+    left: -50px;
 }
 
-#InputID, #InputPw{
-    position: relative;
-    width: 75%;
-    margin: auto; margin-bottom: 70px;
+@keyframes NavAnimation{
+    from{
+        top: -50;
+    }
+    to{
+        top: 0;
+    }
 }
-
-#InputID input:focus{
-    //몰루
-}
-
-#LoginContain label{
-    position: absolute;
-    top: 10px; left: 10px;
-}
-
-#LoginContain input{
-    width: 100%; height: 50px;
-}
-
-
